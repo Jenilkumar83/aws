@@ -1,0 +1,35 @@
+IAM:: Identity and Access Management, Global service
+Users & groups can be assigned JSON documents called policies
+
+MFA:: Multi Factor Authentication
+-want to protect your root accounts and IAM users
+-MFA=password you know + security device you own
+
+->virtual MFA device->options: google authenticator--phone only
+                               authy--multi device
+->universal 2nd factor(U2F) security key: Yubikey by Yubico (third party)--support for multiple root & IAM users using sigle security key
+
+How can users access AWS ?
+-AWS Management Console (protected by password + MFA)
+-AWS Command Line Interface (CLI): protected by access keys
+-AWS Software Developer Kit (SDK) - for code: protected by access keys
+
+IAM Roles for Services: common roles:
+-EC2 Instance Roles
+-Lambda Function Roles
+-Roles for CloudFormation
+
+IAM Security Tools:
+-IAM Credentials Report (account-level)
+-IAM Access Advisor (user-level)
+
+Summary:
+• Users: mapped to a physical user, has a password for AWS Console
+• Groups: contains users only
+• Policies: JSON document that outlines permissions for users or groups
+• Roles: for EC2 instances or AWS services
+• Security: MFA + Password Policy
+• AWS CLI: manage your AWS services using the command-line
+• AWS SDK: manage your AWS services using a programming language
+• Access Keys: access AWS using the CLI or SDK
+• Audit: IAM Credential Reports & IAM Access Advisor

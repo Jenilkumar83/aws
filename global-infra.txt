@@ -1,0 +1,35 @@
+A global application:: is an application deployed in multiple geographies
+-Decreased Latency 
+-Disaster Recovery(DR) 
+-Attack protection
+
+Global DNS: Route 53, Global Content Delivery Network (CDN): CloudFront, S3 Transfer Acceleration, AWS Global Accelerator
+
+Route53:: is a Managed DNS (Domain Name System)
+DNS:: is a collection of rules and records which helps clients understand how to reach a server through URLs.
+Route 53 Routing Policies::SIMPLE ROUTING POLICY, WEIGHTED ROUTING POLICY, LATENCY ROUTING POLICY, FAILOVER ROUTING POLICY
+
+Amazon CloudFront:: Content Delivery Network (CDN), Improves users experience, 216 Point of Presence globally (edge locations)
+Cloud front origins: S3 bucket, custom origin(HTTP)
+
+Global Applications Architecture::
+-Single Region, Single AZ
+-Single Region, Multi AZ
+-Multi Region, Active-Passive
+-Multi Region, Active-Active
+
+Summary:
+• Global DNS: Route 53
+  -Great to route users to the closest deployment with least latency
+  -Great for disaster recovery strategies
+• Global Content Delivery Network (CDN): CloudFront
+  -Replicate part of your application to AWS Edge Locations – decrease latency
+  -Cache common requests – improved user experience and decreased latency
+• S3 Transfer Acceleration
+  -Accelerate global uploads & downloads into Amazon S3
+• AWS Global Accelerator
+  -Improve global application availability and performance using the AWS global network
+
+• AWS Outposts -- Deploy Outposts Racks in your own Data Centers to extend AWS services
+• AWS WaveLength -- Brings AWS services to the edge of the 5G networks, Ultra-low latency applications
+• AWS Local Zones -- Bring AWS resources (compute, database, storage, …) closer to your users, Good for latency-sensitive applications

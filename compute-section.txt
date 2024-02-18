@@ -1,0 +1,72 @@
+Docker:
+-Docker is a software development platform to deploy apps
+-Apps are packaged in containers that can be run on any OS
+
+ECS:(Elastic Container Service):
+-You must provision & maintain the infrastructure (the EC2 instances)
+Fargate:
+-You do not provision the infrastructure (no EC2 instances to manage) – simpler!
+-serverless offering
+
+Serverless:
+-Serverless is a new paradigm in which the developers don’t have to manage servers anymore…
+-They just deploy code
+-Initially... Serverless == FaaS (Function as a Service)
+
+
+Why AWS Lambda::
+EC2:
+• Virtual Servers in the Cloud
+• Limited by RAM and CPU
+• Continuously running
+• Scaling means intervention to add / remove servers
+Lambda:
+• Virtual functions – no servers to manage!
+• Limited by time - shor t executions
+• Run on-demand
+• Scaling is automated!
+
+
+Batch vs Lambda::
+• Lambda:
+  Time limit
+  Limited runtimes
+  Limited temporary disk space
+  Serverless
+• Batch:
+  No time limit
+  Any runtime as long as it’s packaged as a Docker image
+  Rely on EBS / instance store for disk space
+  Relies on EC2 (can be managed by AWS)
+
+
+Amazon Lightsail:
+-Virtual servers, storage, databases, and networking
+->Use cases:
+  -Simple web applications (has templates for LAMP, Nginx, MEAN, Node.js…)
+  -Websites (templates for WordPress, Magento, Plesk, Joomla)
+  -Dev / Test environment
+
+
+Summary:
+• Docker : container technology to run applications
+• ECS: run Docker containers on EC2 instances
+• Fargate:
+  -Run Docker containers without provisioning the infrastructure
+  -Serverless offering (no EC2 instances)
+• ECR: Private Docker Images Repository
+• Batch: run batch jobs on AWS across managed EC2 instances
+• Lightsail: predictable & low pricing for simple application & DB stacks
+
+
+Lambda Summary:
+• Lambda is Serverless, Function as a Service, seamless scaling, reactive
+• Lambda Billing:
+  -By the time run x by the RAM provisioned
+  -By the number of invocations
+• Language Suppor t: many programming languages except (arbitrary) Docker
+• Invocation time: up to 15 minutes
+• Use cases:
+  -Create Thumbnails for images uploaded onto S3
+  -Run a Serverless cron job
+• API Gateway: expose Lambda functions as HTTP API

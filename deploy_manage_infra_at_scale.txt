@@ -1,0 +1,73 @@
+CloudFormation:
+-CloudFormation is a declarative way of outlining your AWS Infrastructure, for any resources
+
+AWS Cloud Development Kit (CDK):
+-You can therefore deploy infrastructure and application runtime code together
+-great for lambda , docker containers in ECS/EKS
+
+AWS Elastic Beanstalk:
+-Elastic Beanstalk is a developer centric view of deploying an application on AWS
+-Beanstalk = Platform as a Service (PaaS)
+-Just the application code is the responsibility of the developer
+
+Elastic Beanstalk – Health Monitoring:
+-Health agent pushes metrics to CloudWatch, 
+-Checks for app health, publishes health events
+
+AWS CodeDeploy:
+-We want to deploy our application automatically
+-Works with EC2 Instances, Works with On-Premises Servers, Hybrid service
+
+AWS CodeCommit:
+-Before pushing the application code to servers, it needs to be stored somewhere, A famous public offering is GitHub, AWS’ competing product is CodeCommit
+->CodeCommit:
+• Source-control service that hosts Git-based repositories
+• Makes it easy to collaborate with others on code
+• The code changes are automatically versioned
+
+AWS CodeBuild:
+-Compiles source code, run tests, and produces packages that are ready to be deployed (by CodeDeploy for example)
+
+AWS CodePipeline:
+->Orchestrate the different steps to have the code automatically pushed to production
+• Code -> Build -> Test -> Provision -> Deploy
+• Basis for CICD (Continuous Integration & Continuous Delivery)
+
+AWS CodeArtifact:
+-Software packages depend on each other to be built (also called code dependencies), and new ones are created
+-Storing and retrieving these dependencies is called ar tifact management
+-Developers and CodeBuild can then retrieve dependencies straight from CodeAr tifact
+
+AWS CodeStar:
+-Unified UI to easily manage software development activities in one place
+
+AWS Cloud9:
+-AWS Cloud9 is a cloud IDE (Integrated Development Environment) for writing, running and debugging code
+
+AWS Systems Manager (SSM):
+-EC2 and On-Premises, Hybrid
+-Patching automation for enhanced compliance
+-Run commands across an entire fleet of servers
+
+Systems Manager – SSM Session Manager:
+-No SSH access, bastion hosts, or SSH keys needed
+-No por t 22 needed (better security)
+
+Summary:
+• CloudFormation: (AWS only)
+  -Infrastructure as Code, works with almost all of AWS resources
+  -Repeat across Regions & Accounts
+• Beanstalk: (AWS only)
+  -Platform as a Service (PaaS), limited to certain programming languages or Docker
+  -Deploy code consistently with a known architecture: ex, ALB + EC2 + RDS
+• CodeDeploy (hybrid): deploy & upgrade any application onto servers
+• Systems Manager (hybrid): patch, configure and run commands at scale
+
+• CodeCommit: Store code in private git repository (version controlled)
+• CodeBuild: Build & test code in AWS
+• CodeDeploy: Deploy code onto servers
+• CodePipeline: Orchestration of pipeline (from code to build to deploy)
+• CodeAr tifact: Store software packages / dependencies on AWS
+• CodeStar: Unified view for allowing developers to do CICD and code
+• Cloud9: Cloud IDE (Integrated Development Environment) with collab
+• AWS CDK: Define your cloud infrastructure using a programming language

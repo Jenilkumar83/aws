@@ -1,0 +1,46 @@
+Amazon CloudWatch Metrics::
+-CloudWatch provides metrics for every services in AWS,
+-Metric is a variable to monitor (CPUUtilization, NetworkIn…), 
+-Metrics have timestamps
+
+Important Metrics:: EC2 instances, EBS volumes, S3 buckets, Billing, Service limits, Custom metrics
+
+Amazon CloudWatch Alarms:: 
+-Alarms are used to trigger notifications for any metric 
+Alarm actions:
+-Auto Scaling, EC2 Actions, SNS notifications
+
+AWS CloudTrail::
+-Provides governance, compliance and audit for your AWS Account
+-Get an history of events / API calls made within your AWS Account by: conslole, sdk, cli, aws services
+-A trail can be applied to All Regions (default) or a single Region.
+
+AWS X-Ray:: Visual analysis of our applications
+
+Amazon CodeGuru::
+-An ML-powered service for automated code reviews and application performance recommendations
+two functionalities: 1.codeguru reviewer, 2.codeguru profiler
+
+AWS Health Dashboard - Service History::
+-Shows all regions, all services health
+-Shows historical information for each day
+-Has an RSS feed you can subscribe to
+
+AWS Account Health Dashboard provides aler ts and remediation guidance when AWS is experiencing events that may impact you.
+Previously called AWS Personal Health Dashboard (PHD)
+-relevant and timely information
+-proactive notification
+-scheduled activities
+
+Summary:
+• CloudWatch:
+  -Metrics: monitor the performance of AWS services and billing metrics
+  -Alarms: automate notification, perform EC2 action, notify to SNS based on metric
+  -Logs: collect log files from EC2 instances, servers, Lambda functions…
+  -Events (or EventBridge): react to events in AWS, or trigger a rule on a schedule
+• CloudTrail: audit API calls made within your AWS account
+• CloudTrail Insights: automated analysis of your CloudTrail Events
+• X-Ray: trace requests made through your distributed applications
+• AWS Health Dashboard: status of all AWS services across all regions
+• AWS Account Health Dashboard: AWS events that impact your infrastructure
+• Amazon CodeGuru: automated code reviews and application performance recommendations

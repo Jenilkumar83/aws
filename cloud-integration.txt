@@ -1,0 +1,26 @@
+When we start deploying multiple applications, they will inevitably need to communicate with one another, there are two types::
+1) Synchronous communications:(application to application)
+2) Asynchronous / Event based:(application to queue to application)
+
+To decouple app:
+-SQS: queue model
+-SNS: pub/sub model
+-Kinesis: real-time data streaming model
+
+Amazon SQS – FIFO Queue:: FIFO = First In First Out (ordering of messages in the queue)
+Amazon Kinesis:: Managed service to collect, process, and analyze real-time streaming data at any scale
+Amazon SNS:: What if you want to send one message to many receivers?
+
+Summary:
+• SQS:
+  -Queue service in AWS
+  -Multiple Producers, messages are kept up to 14 days
+  -Multiple Consumers share the read and delete messages when done
+  -Used to decouple applications in AWS
+• SNS:
+  -Notification service in AWS
+  -Subscribers: Email, Lambda, SQS, HTTP, Mobile…
+  -Multiple Subscribers, send all messages to all of them
+  -No message retention
+• Kinesis: real-time data streaming, persistence and analysis
+• Amazon MQ: managed message broker for ActiveMQ and RabbitMQ in the cloud (MQTT, AMQP.. protocols)

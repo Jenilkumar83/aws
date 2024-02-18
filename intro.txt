@@ -1,0 +1,47 @@
+Network: cables, routers and servers connected with each other
+Router : A networking device that forwards data packets between computer networks.They know where to send your packets on the internet!
+Switch : Takes a packet and send it to the correct server/client on your network.
+
+Cloud computing:: is the on-demand delivery of compute power, database storage, applications, and other IT resources
+- pay as you go pricing
+- provision exactly the right type and size of computing
+- almost instantly
+
+private cloud: single organization
+public cloud: operate by third party
+hybrid cloud: some servers on premises and extend some capabilities to the cloud(mix of private & public)
+
+Characteristic of cloud computing::
+on-demand self service
+broad network access
+multi-tenancy and resource pooling
+rapid elasticity and scalability
+measured service
+
+Types of cc:
+IaaS(Infrastructure as a Service), Ex: Amazon EC2 (on AWS), GCP, Azure, Rackspace, Digital Ocean, Linode
+PaaS(Platform as a Service), Ex: Elastic Beanstalk (on AWS), Heroku, Google App Engine (GCP),Windows Azure (Microsoft)
+SaaS(Software as a Service), Ex: Many AWS services (ex: Rekognition for Machine Learning), Google Apps (Gmail), Dropbox, Zoom
+
+Managed by us:
+On-premises: Applications, Data, Runtime, Middleware, O/S, Virtualization, Servers, Storage, Networking
+-In IaaS -- Applications, Data, Runtime, Middleware, O/S
+-In PaaS -- Applications, Data
+-In SaaS -- all managed by others
+
+Pricing of the Cloud:
+-Compute
+-Storage
+-Data transfer OUT of the Cloud
+
+A region is a cluster of data centers,
+Each region has many availability zones
+(usually 3, min is 3, max is 6)
+
+
+You ONLY want to manage Applications and Data. Which type of Cloud Computing model should you use?-PaaS
+Which Global Infrastructure identity is composed of one or more discrete data centers with redundant power, networking, and connectivity, and are used to deploy infrastructure?---Availability zones
+Which are the 3 pricing fundamentals of the AWS Cloud?---Compute,storage and data transfer out of the AWS Cloud
+Which of the following options is NOT a point of consideration when choosing an AWS Region?---Capacity availability
+What defines the distribution of responsibilities for security in the AWS Cloud?---The shared responsibility model
+A company would like to benefit from the advantages of the Public Cloud but would like to keep sensitive assets in its own infrastructure. Which deployment model should the company use?---Hybrid cloud
