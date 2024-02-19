@@ -9,7 +9,7 @@ IP Addresses in AWS::
 ->IPv6 – Internet Protocol version 6 (3.4 × 10 !" Addresses)
 -Every IP address is public (no private range)
 
-VPC - Vir tual Private Cloud: private network to deploy your resources (regional resource)
+VPC - Virtual Private Cloud: private network to deploy your resources (regional resource)
 Subnets allow you to partition your network inside your VPC (Availability Zone resource)
 
 -A public subnet is a subnet that is accessible from the internet
